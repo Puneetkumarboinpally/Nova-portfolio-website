@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #1b1f24;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* need to mention top and left mandatory 
+  if you are using position:fixed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  /* need to mention width:100% to
+   get your navigation exactly according to your needs */
+  background-color: transparent;
+  width: 100%;
+  padding: 20px 3%;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+  font-weight: normal;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffffe5;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  padding: 10px 20px;
+}
+@media (max-width: 850px) {
+  nav ul li a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+.header-container {
+  background-image: url("images/hero-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 20% right;
+  width: 100%;
+  height: 100vh;
+  color: #ffffffe5;
+  position: relative;
+}
+header {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+  padding: 20px;
+}
+.btn {
+  padding: 12px 50px;
+  font-weight: bold;
+}
+.btn:hover {
+  color: #ffffffe5;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+header h1 {
+  font-size: 48px;
+  padding: 20px 0px;
+  font-weight: normal;
+}
+header p {
+  max-width: 450px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* portfolio section */
+
+.gallery-container {
+  margin-top: 50px;
+}
+.gallery-container section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 40px 180px;
+  padding-top: 60px;
+  width: 100vw;
+}
+.gallery-container section img {
+  width: 100%;
+  height: 35vh;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.gallery-container section img:hover {
+  border: 2px solid #ffffffe5;
+}
+@media (max-width: 800px) {
+  .gallery-container section {
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+  }
+}
+@media (max-width: 600px) {
+  .gallery-container section {
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+}
