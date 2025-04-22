@@ -24,7 +24,7 @@ nav {
 
   /* need to mention width:100% to
    get your navigation exactly according to your needs */
-  background-color: transparent;
+
   width: 100%;
   padding: 20px 3%;
 }
@@ -45,6 +45,12 @@ nav ul li a {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 18px;
   padding: 10px 20px;
+}
+nav ul li a:hover {
+  color: black;
+  border: 1px solid magenta;
+  background-color: #ffffffe5;
+  transition: 0.3s;
 }
 @media (max-width: 850px) {
   nav ul li a {
@@ -161,55 +167,74 @@ header p {
   position: absolute;
   right: 0;
 }
-/* about page styles */
-
-.about-main-container {
-  margin-top: 60px;
-  display:flex;
-  justify-content: space-around;
-  padding:0px 180px;
-  position:relative;
-  top:80px;
-}
-.about-container1{
-  padding:20px;
-}
-.about-container1 p{
-  font-size: 1.2rem;
-  margin-bottom:20px;
-}
-.about-container1 h1{
-  font-size: 3.5rem;
-  font-weight:normal;
-}
-
-.about-container2{
-  max-width:600px;
-  line-height: 1.4;
-}
-.about-container2 p{
-  margin-bottom:20px;
-}
-.about-btn{
-  padding:10px 120px;
-  font-size: 16px;
-  font-weight:bold;
-  color:rgba(0, 0, 0, 0.836);
-  margin-top:20px;
-}
-.about-btn:hover{
+.service-btn:hover {
   color: #ffffffe5;
   border: 2px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.1);
   transition: 0.3s;
 }
-@media(max-width:800px){
-  .about-main-container{
-    display:block;
-    width:100vh;
+/* about page styles */
+
+.about-main-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 180px;
+  position: relative;
+  top: 80px;
+}
+.about-container1 {
+  padding: 20px;
+}
+.about-container1 p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.about-container1 h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.about-container2 {
+  max-width: 600px;
+  line-height: 1.4;
+}
+.about-container2 p {
+  margin-bottom: 20px;
+}
+.about-btn {
+  padding: 10px 120px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.836);
+  margin-top: 20px;
+}
+.about-btn:hover {
+  color: #ffffffe5;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+@media (max-width: 800px) {
+  .about-main-container {
+    display: block;
+    width: 100vh;
   }
-  .about-btn{
-    padding:10px 60px;
+  .about-btn {
+    padding: 10px 60px;
     font-size: 14px;
   }
 }
+
+/* contacts page styles */
+
+.contact-background {
+  /*created this class in the body tag to make this page specific */
+  background-image: url("images/contact-page-image.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+

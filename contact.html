@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nova's Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css>
   </head>
-  <body>
+  <body class="contact-background">
+    <!--created this class here to add background image specific to this page-->
+
     <!-- navigation section -->
 
     <nav class="nav-main">
@@ -21,5 +25,39 @@
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
+
+    <!-- contact us content -->
+
+    <section class="contact-container">
+      <h1>LET ME TELL YOUR DIGITAL STORIES</h1>
+      <form class="contact-form-containter">
+        <label for="firstname">FIRST NAME</label>
+        <input type="text" id="firstname" name="firstname" />
+        <label for="lastname">LAST NAME</label>
+        <input type="text" id="lastname" name="lastname" />
+        <label for="email">EMAIL ADDRESS</label>
+        <input type="email" id="email" name="email" />
+        <button type="submit">SUBMIT</button>
+      </form>
+      <div class="form-icons">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
